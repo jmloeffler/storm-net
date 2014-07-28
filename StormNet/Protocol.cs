@@ -24,7 +24,7 @@ namespace StormNet
             return msg.TrimEnd('\n');
         }
 
-        static JsonObject ReadMessage()
+        internal static JsonObject ReadMessage()
         {
             string message = ReadStringMessage();
             return JsonObject.Parse(message);
